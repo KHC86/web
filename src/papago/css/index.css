@@ -1,0 +1,71 @@
+:root {
+    --main-color: rgb(221, 221, 221);
+    --article-border-color: rgb(240, 240, 240);
+
+    /*색지정을 변수화시켜서 저장함*/
+}
+
+/*header*/
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 32px;
+    border-bottom: solid var(--main-color) 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    width: 100%;
+}
+
+nav img {
+    margin: 0;
+}
+/*main*/
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--article-border-color);
+
+    max-width: 630px;
+
+}
+.article-header-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 110px;
+    height: 59px;
+}
+
+.article-header-left span {
+    font-size: 18px;
+}
+
+
+.article-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    height: 60px;
+}
+.article-body-textarea {
+    width: 630px;
+    height: 219px;
+}
+.article-body-textarea textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+
+    font-size: 40px;
+}
