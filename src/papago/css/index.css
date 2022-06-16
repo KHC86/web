@@ -1,8 +1,25 @@
 :root {
     --main-color: rgb(221, 221, 221);
     --article-border-color: rgb(240, 240, 240);
+    --sub-font-color: rgb(201, 201, 201);
 
     /*색지정을 변수화시켜서 저장함*/
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 0px 80px;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1270px;
 }
 
 /*header*/
@@ -32,7 +49,7 @@ nav img {
 
     border-bottom: 1px solid var(--article-border-color);
 
-    max-width: 630px;
+    width: 630px;
 
 }
 .article-header-left {
@@ -56,6 +73,28 @@ nav img {
     width: 64px;
     height: 60px;
 }
+
+/*main*/
+
+.article-container {
+    display: flex;
+}
+
+.article-container article{
+    border: 1px solid var(--main-color);
+}
+
+.article-right {
+    background-color: rgb(253, 253, 253);
+}
+.article-body {
+    position: relative;
+
+    border-bottom: 1px solid var(--article-border-color);
+    padding: 28px 20px 63px;
+    width: 630px;
+
+}
 .article-body-textarea {
     width: 630px;
     height: 219px;
@@ -64,8 +103,158 @@ nav img {
     border: none;
     outline: none;
     resize: none;
-    width: 100%;
+    width: 590px;
     height: 100%;
 
     font-size: 40px;
+}
+
+pre {
+    height: 219px;
+}
+.article-body-count {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.article-body-count span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--sub-font-color);
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+
+    width: 630px;
+
+}
+
+.article-footer-left {
+    display: flex;
+}
+
+.af-left-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90px;
+    height: 72px;
+    border-right: 1px solid var(--article-border-color);
+}
+
+.article-footer button {
+    width: 144px;
+    height: 74px;
+    border: 1px solid rgb(0, 179, 0);
+    background-color: #21dc6d;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.section-top {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid var(--article-border-color);
+
+    width: 100%;
+    height: 61px;
+
+}
+.section-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 136px;
+}
+
+.sb-url {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 811px;
+}
+
+.lable-url label {
+    font-size: 16px;
+}
+
+.input-url {
+    display: flex;
+
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 1px;
+
+    max-width: 658px;
+}
+
+.input-url input {
+    border: none;
+    padding: 6px 5px;
+
+    width: 427px;
+    height: 32px;
+}
+
+.input-select-convert {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 230px;
+    height: 32px;
+
+}
+
+.button-url button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+
+    width: 34px;
+    height: 34px;
+
+    overflow: hidden;
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fbfbfb;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-bottom: 1px solid var(--main-color);
+    padding: 19px 36px 20px;
+    
+    height: 65px;
+}
+.footer2 {
+    display: flex;
+    align-items: center;
+    
+    padding: 30px 36px
+    ;
+    width: 1352px;
+    height: 228px;
 }
